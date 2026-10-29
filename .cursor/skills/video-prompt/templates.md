@@ -66,7 +66,7 @@ If they attached a still and named no action, pick the smallest motion the pictu
 
 ## Text-to-video
 
-{Shot size} of {subject} {movement}, in {setting}. {Background movement, if any.} {Camera clause, only if they asked.}
+{Shot size} of {subject} {movement}, in {setting}. {Background movement, if any.}
 
 The model has no image, so the setting has to be in the sentence. Keep it to one place and one action. Do not add a second beat unless the clip is 10 seconds and the second beat is a follow-through.
 
@@ -74,33 +74,17 @@ The model has no image, so the setting has to be in the sentence. Keep it to one
 A medium shot of a baker sliding a blistered loaf onto a wire rack, in a narrow kitchen at dawn. Flour hangs in the light from the street window.
 ```
 
-With a camera they asked for:
-
-```text
-A wide shot of a red-crowned crane stepping through shallow water, looking for food. The camera slowly follows at water level.
-```
+If they also asked the camera to move, write the subject and the setting here, then append the clause from [video-camera-control](../video-camera-control/SKILL.md). Do not invent the camera sentence in this file.
 
 ## Camera move
 
-{Subject} {small movement, or "holds still"}. The camera {path, speed, and direction}.
-
-Use this when they asked for a move, or when the only change is the frame. A person or animal who holds perfectly still looks frozen, so give them one small action unless the user wants a locked subject. Name the path in plain words: pushes in, pulls back, pans left, rises, follows, or orbits.
-
-A description of a new scene here causes a cut. Keep the clause about the camera, not about a different place.
-
-```text
-The woman stays seated and blinks once. The camera slowly pushes in.
-```
-
-```text
-The cyclist keeps pedaling. The camera tracks alongside, low to the road.
-```
+Stop. Follow [video-camera-control](../video-camera-control/SKILL.md). Subject motion for the same clip still uses the image-to-video or text-to-video section above. The camera clause comes only from that skill.
 
 ## Start and end
 
 {Subject} {the movement that connects the first still to the second}.
 
-Both frames are attached. Do not describe either picture. Describe only the change between them. If the two pictures show different scenes, say so under **Assumptions**: the clip will read as a transition, and a smaller change between frames holds together better.
+Both frames are attached. Do not describe either picture. Describe only the change between them. If the change is a camera reveal, add the clause from [video-camera-control](../video-camera-control/moves.md#reveal). If the two pictures show different scenes, say so under **Assumptions**: the clip will read as a transition, and a smaller change between frames holds together better.
 
 ```text
 The woman lowers her hand from her hat to her side and turns her face toward the window.
