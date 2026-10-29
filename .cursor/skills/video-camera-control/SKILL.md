@@ -74,7 +74,7 @@ Shot 3: The camera pans right across the monitor.
 
 Otherwise deliver one prompt per shot, in order.
 
-For a product, the default move is a slow push-in on one detail. Use a pull-back when they want the whole object, and a slow pan when they want a lineup. The product does not change shape, labels, or construction.
+For a product, the default move is a slow push-in on one detail. Use a pull-back when they want the whole object, and a slow pan when they want a lineup. The product stays rigid: shape, label, and edges. A wide orbit invents the unseen side. If they asked for a turntable, keep the arc short and record that under **Assumptions**.
 
 ## Checklist
 

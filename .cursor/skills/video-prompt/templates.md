@@ -6,9 +6,11 @@ Duration, aspect ratio, and quality mode go under **Settings** in the delivery, 
 
 ## Image-to-video
 
-{Subject} {concrete movement}. {Next subject} {its movement}. {Background element} {its movement}.
+{Subject} {concrete movement}. {What holds still, when a face, product, logo, painting, old photo, or the rest of a cinemagraph must survive.} {Background element} {its movement, only if the background should move}.
 
 The subject is whoever or whatever is already the focus of the still: a person, animal, plant, or object. The movement is the body part or object changing, not a goal. "Puts on sunglasses with her hand" tells the model the action. "Put on sunglasses" does not.
+
+Match the still-type table in SKILL.md. A portrait stays at a blink, a breath, or hair. A product stays rigid. A cinemagraph names the one moving element and freezes the rest.
 
 Leave out clothing, place, lens, and style. Those are in the image. Add a background clause only when something behind the subject should move.
 
@@ -62,7 +64,31 @@ Speed as part of the movement, still one action:
 The cyclist pedals hard along the highway, and the wheels blur with speed.
 ```
 
-If they attached a still and named no action, pick the smallest motion the picture already suggests: a smile, a blink, steam rising, a curtain shifting. Write that as subject plus movement. An empty prompt is only for when they explicitly want the model to invent the motion. Say that under **Assumptions**, and still offer one directed prompt they can paste instead.
+A portrait, with the face locked and the camera fixed:
+
+```text
+The woman breathes once and blinks. Her face stays stable, and a few strands of hair shift.
+```
+
+A product accent. The object does not turn:
+
+```text
+A thin stream of liquid splashes beside the bottle. The bottle stays rigid, and its label stays sharp.
+```
+
+A cinemagraph. One element moves:
+
+```text
+Steam curls up from the cup. Everything else in the frame stays frozen.
+```
+
+An old photo. The smallest motion, and the print survives:
+
+```text
+The man blinks and his smile deepens slightly. The grain and the tones stay as they are.
+```
+
+If they attached a still and named no action, pick the smallest motion that still type allows. An empty prompt is only for when they explicitly want the model to invent the motion. Say that under **Assumptions**, and still offer one directed prompt they can paste instead.
 
 ## Text-to-video
 

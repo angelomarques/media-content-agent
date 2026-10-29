@@ -30,7 +30,7 @@ The bottle stays on the table. The camera slowly pushes in to emphasize the cap 
 
 {Subject} {small movement}. The camera slowly pulls back from {close subject} to reveal {environment}.
 
-Name what the frame starts on and what enters as it retreats. If there is nothing to reveal, use a push-in instead.
+Name what the frame starts on and what enters as it retreats. If there is nothing to reveal, use a push-in instead. An aerial pull-back that rises while it reveals is one move. Write it as a pull-back.
 
 ```text
 The ring stays in frame. The camera slowly pulls back to reveal the white table and the rest of the display.
@@ -82,10 +82,10 @@ The cyclist pedals down the road. The camera tracks alongside, low and stable.
 
 {Subject} {holds still or turns slowly}. The camera orbits slowly around {subject} to show {the side or the back}.
 
-Do not combine an orbit with a push-in and a tilt in the same shot.
+Do not combine an orbit with a push-in and a tilt in the same shot. A wide orbit around a product invents the hidden side and warps the label. Keep the arc short, and say the product stays rigid. Prefer a push-in when the label must stay exact.
 
 ```text
-The bottle stays centered. The camera orbits slowly to show the label's far edge.
+The bottle stays rigid and centered. The camera orbits a short way, and the label stays readable.
 ```
 
 ## Static
