@@ -5,7 +5,7 @@ alwaysApply: true
 
 # Push changes to GitHub
 
-After you create or edit files in this repo, commit that work and push it to GitHub on the current branch, including `main`.
+After you create or edit files in this repo, commit that work and push (run `git push`) it to GitHub on the current branch, including `main`.
 
 Do this for every change you make. Skip the commit or the push only when the user says not to in that request.
 
