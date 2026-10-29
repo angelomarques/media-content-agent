@@ -1,0 +1,12 @@
+---
+description: Commit and push changes in this repo to GitHub unless told not to
+alwaysApply: true
+---
+
+# Push changes to GitHub
+
+After you create or edit files in this repo, commit that work and push it to GitHub on the current branch, including `main`.
+
+Do this for every change you make. Skip the commit or the push only when the user says not to in that request.
+
+Keep the usual git safety limits: do not commit secrets, do not force-push, do not skip hooks, and do not change git config.
