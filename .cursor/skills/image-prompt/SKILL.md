@@ -8,7 +8,9 @@ description: >-
   storyboard frame, or to edit, inpaint, restyle, try on clothes, translate or
   localize on-image text, or combine reference images. When the request is a
   product showcase, packshot, catalog photo, or other e-commerce still of a
-  physical product, follow the product-image-prompt skill instead.
+  physical product, follow the product-image-prompt skill instead. When the
+  request is a video, animation, or image-to-video prompt, follow the
+  video-prompt skill instead.
 ---
 
 # Image prompts
@@ -23,9 +25,13 @@ This skill writes the prompt. Do not generate an image unless the user asks for 
 
 If the image shows a physical product for sale — a packshot, catalog or product-page set, unboxing flat lay, macro, colorway, fit or scale guide, in-use shot, lifestyle, UGC, ad banner, or shop-the-look — stop. Read [product-image-prompt](../product-image-prompt/SKILL.md) and follow that skill. Do not fill a template from this skill for that request. A transparent cutout, a virtual try-on, and an edit that is not one of those catalog shots stay here.
 
+## Video
+
+Motion belongs to [video-prompt](../video-prompt/SKILL.md). If they already have the still, stop and follow that skill. If they do not, write the still here, deliver it, and then follow video-prompt for the motion. The image prompt describes the picture only.
+
 ## Workflow
 
-1. If the request is a product showcase, follow the handoff above and stop.
+1. If the request is a product showcase, follow that handoff and stop. If it is a video of an existing still, follow video-prompt and stop. If it is a video and the still does not exist, write the still here, then follow video-prompt for the clip.
 2. Classify the job with the table below.
 3. Read the matching section in [templates.md](templates.md) and fill it.
 4. If the subject is missing, or you cannot tell a new image from an edit of an attachment, ask one question. Otherwise assume and proceed.

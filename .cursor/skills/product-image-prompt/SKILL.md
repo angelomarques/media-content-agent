@@ -15,15 +15,16 @@ description: >-
 
 Write prompts for a product showcase. The master shot is the single source of truth. Every later shot attaches that image and keeps the product identical. A narrative paragraph, not a keyword list. This skill writes the prompt. Do not generate an image unless the user asks for one.
 
-Logos, UI, stickers, comics, portraits, transparent cutouts, virtual try-ons, and other non-catalog images stay in [image-prompt](../image-prompt/SKILL.md).
+Logos, UI, stickers, comics, portraits, transparent cutouts, virtual try-ons, and other non-catalog images stay in [image-prompt](../image-prompt/SKILL.md). A video of the product stays in [video-prompt](../video-prompt/SKILL.md). Write the still here first when they do not have one, then hand that image over as the locked product.
 
 ## Workflow
 
-1. Classify the shot with the table below.
-2. Read the matching section in [shots.md](shots.md) and fill it.
-3. Decide the master. An attached product photo is the master. With no photo, the master is a text-to-image prompt, and every later prompt says to attach that result.
-4. If the product itself is missing, ask one question. Otherwise assume and proceed.
-5. Run the checklist, then deliver.
+1. If they asked for a video and already have the product still, stop and follow video-prompt. If they asked for a video and have no still, write the shot this skill owns, then follow video-prompt for the motion. The still prompt does not describe motion.
+2. Classify the shot with the table below.
+3. Read the matching section in [shots.md](shots.md) and fill it.
+4. Decide the master. An attached product photo is the master. With no photo, the master is a text-to-image prompt, and every later prompt says to attach that result.
+5. If the product itself is missing, ask one question. Otherwise assume and proceed.
+6. Run the checklist, then deliver.
 
 A showcase with no shot named is the master only. Name the other shots they can ask for after it. A full catalog is every shot the known facts support, in the order below. Do not invent box contents, colorways, or companion products. Ask once for those, or leave those shots out and name the missing fact under **Assumptions**.
 
