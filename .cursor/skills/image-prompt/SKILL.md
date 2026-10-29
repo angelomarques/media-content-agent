@@ -4,9 +4,11 @@ description: >-
   Writes ready-to-paste narrative prompts for AI image generation and editing
   (Gemini, Nano Banana, Imagen, Flux, GPT Image, Midjourney, and similar). Use
   when the user asks for an image prompt, text-to-image prompt, picture
-  description, logo, poster, product shot, infographic, UI mockup, sticker,
-  comic panel, storyboard frame, or to edit, inpaint, restyle, try on clothes,
-  translate or localize on-image text, or combine reference images.
+  description, logo, poster, infographic, UI mockup, sticker, comic panel,
+  storyboard frame, or to edit, inpaint, restyle, try on clothes, translate or
+  localize on-image text, or combine reference images. When the request is a
+  product showcase, packshot, catalog photo, or other e-commerce still of a
+  physical product, follow the product-image-prompt skill instead.
 ---
 
 # Image prompts
@@ -17,12 +19,17 @@ The method follows Google's Gemini image prompting guides, including Nano Banana
 
 This skill writes the prompt. Do not generate an image unless the user asks for one.
 
+## Product showcase
+
+If the image shows a physical product for sale — a packshot, catalog or product-page set, unboxing flat lay, macro, colorway, fit or scale guide, in-use shot, lifestyle, UGC, ad banner, or shop-the-look — stop. Read [product-image-prompt](../product-image-prompt/SKILL.md) and follow that skill. Do not fill a template from this skill for that request. A transparent cutout, a virtual try-on, and an edit that is not one of those catalog shots stay here.
+
 ## Workflow
 
-1. Classify the job with the table below.
-2. Read the matching section in [templates.md](templates.md) and fill it.
-3. If the subject is missing, or you cannot tell a new image from an edit of an attachment, ask one question. Otherwise assume and proceed.
-4. Run the checklist, then deliver the prompt.
+1. If the request is a product showcase, follow the handoff above and stop.
+2. Classify the job with the table below.
+3. Read the matching section in [templates.md](templates.md) and fill it.
+4. If the subject is missing, or you cannot tell a new image from an edit of an attachment, ask one question. Otherwise assume and proceed.
+5. Run the checklist, then deliver the prompt.
 
 When the user wants several options, write separate prompts that share the subject and purpose and change one dimension only (light, angle, or style). Label them Variation A, B, and C.
 
@@ -35,7 +42,7 @@ When the user wants several options, write separate prompts that share the subje
 | Text in image | Logo, wordmark, poster, title with set copy | [Text](templates.md#text) |
 | Infographic | Explainer, labeled diagram, timeline, flow | [Infographic](templates.md#infographic) |
 | UI mockup | App or web interface that should look shipped | [UI mockup](templates.md#ui-mockup) |
-| Product | Packshot, mockup, e-commerce, ad still | [Product](templates.md#product) |
+| Product showcase | Packshot, catalog, product page, or ad still of a product for sale | Stop. Follow [product-image-prompt](../product-image-prompt/SKILL.md) |
 | Minimalist | Background, slide, hero with room for type | [Minimalist](templates.md#minimalist) |
 | Sequential | One comic panel, a strip, or a recurring character | [Sequential](templates.md#sequential) |
 | Edit | Add, remove, or modify something in an attached image | [Edit](templates.md#edit) |
@@ -106,17 +113,17 @@ Add these after the paragraph, only when that tool was named:
 
 Use this shape. Omit **Assumptions** when you assumed nothing. The fenced block is the only text they paste.
 
-**Job:** Product mockup
-**Assumptions:** Square frame. No label copy, because no brand name was given.
+**Job:** Photorealistic portrait
+**Assumptions:** Vertical 4:5, because they asked for a feed post and gave no ratio.
 **Attach:** none
 
 ```text
-A high-resolution studio photograph of a frosted glass serum bottle with a pale sage pump, standing on wet pale stone. It is a packshot for a minimal skincare product page. A three-point softbox setup creates gentle edge highlights and soft contact shadows. The camera is slightly above the bottle at 45 degrees, with sharp focus on the pump collar and the liquid line. Square.
+A photorealistic medium close-up of an older potter wiping clay from his hands, looking down at a wet bowl on the wheel. The setting is a small studio with a north window. Soft side light creates a quiet atmosphere and picks out the clay on his knuckles and the linen apron. Captured with a 50mm lens at a wide aperture so the shelves behind him fall into blur. Vertical 4:5.
 ```
 
 **Refine next:**
 
-- Keep everything else the same, but emboss the word "SOLA" in small type on the glass.
-- Keep everything else the same, but lower the camera so the pump sits in the top third.
+- Keep everything else the same, but shift the light so it catches the rim of the bowl.
+- Keep everything else the same, but lower the camera to the height of the wheel.
 
 For an edit, **Attach** names each file's role and order. **Refine next** is one small change and, when the job is typography or a recurring character, one recovery prompt. Complex lettering and identical faces across images often need that follow-up. Say so in one sentence when the job is one of those two. Do not promise a perfect first generation.

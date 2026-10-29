@@ -4,4 +4,5 @@ Skills for creating media with AI. Cursor loads them from `.cursor/skills/` in t
 
 ## Skills
 
-- **image-prompt** — Writes a narrative prompt for AI image generation and editing. The method follows Google's Gemini and Nano Banana guides and OpenAI's GPT Image guide: describe the scene, then fill a template for the job (photo, sticker, text, infographic, UI mockup, product, comic, edit, translate, try-on, sketch render, cutout, style transfer, reference images with a role each, or a scene driven by a current fact).
+- **image-prompt** — Writes a narrative prompt for AI image generation and editing. The method follows Google's Gemini and Nano Banana guides and OpenAI's GPT Image guide: describe the scene, then fill a template for the job (photo, sticker, text, infographic, UI mockup, comic, edit, translate, try-on, sketch render, cutout, style transfer, reference images with a role each, or a scene driven by a current fact). A product showcase is handed to product-image-prompt.
+- **product-image-prompt** — Writes catalog prompts for a physical product. One master shot is the source of truth, and later shots keep that product identical: what's-in-the-box flat lay, macro, colorways, scale or fit, in-use, lifestyle, UGC, negative-space banner, and shop-the-look.

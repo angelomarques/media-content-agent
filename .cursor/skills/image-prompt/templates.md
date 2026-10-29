@@ -50,15 +50,7 @@ Create a square app icon for a bedtime podcast called Low Light, with the text "
 
 ## Product
 
-A high-resolution, studio-lit product photograph of a {product} on a {surface}. The lighting is a {setup} to {purpose}. The camera angle is a {angle} to showcase {feature}. Ultra-realistic, with sharp focus on {detail}. {Aspect ratio}.
-
-Name material and finish (matte ceramic, frosted glass, brushed metal). The lighting sentence should say what the light is for, not only the gear name.
-
-Example:
-
-```text
-A high-resolution, studio-lit product photograph of a matte black ceramic coffee mug on polished concrete. It is a hero image for a product page. The lighting is a three-point softbox setup to give soft highlights along the rim and remove hard shadows. The camera is a slightly elevated 45-degree view to show the clean profile and the inner lip. Ultra-realistic, with sharp focus on a thin ribbon of steam. Square.
-```
+Product showcases, packshots, and catalog sets are written by [product-image-prompt](../product-image-prompt/SKILL.md). Do not fill a product prompt from this file.
 
 ## Minimalist
 
